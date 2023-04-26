@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <style>
+        * {
+            font-family:poppins;
+            font-weight: bold;
+        }
+        body {
+            background-image: url('https://img.freepik.com/free-photo/office-supplies_23-2148103962.jpg?w=740&t=st=1681460511~exp=1681461111~hmac=82b0cb52237fe80a090f2698ab53b8245e026c3ebe3639178fb29a7ff12b5685');
+            background-size: cover;
+
+        }
+        .btnstyle {
+            background-color:aqua;
+            color:white;
+            padding: 10px;
+            border-radius: 11px;
+            border:black;
+            font-size: 13px;
+            margin: 15px;
+            cursor:pointer;
+        }
+        .student {
+            margin-top:10%; 
+            color:aliceblue;
+        }
+        .out{
+            margin-top: 0%;
+        }
+    </style>
+</head>
+<body>
+    <div class="student">
+    <center><h1>NewsLetter</h1></center>
+    <center><p>Join NewsLetter to view & share your favourite posts.</p></center>
+    </div>
+    <div style="text-align:center;">
+    <a href="{{url_for('ProRegister')}}"><button class="btnstyle">Sign Up</button></a>
+    <a href="{{url_for('ProLogin')}}"><button class="btnstyle">Login</button></a>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        *{
+            font-family:Poppins;
+        }
+        body {
+            background-image:url('https://img.freepik.com/free-vector/white-abstract-background_23-2148810112.jpg?w=740&t=st=1681464382~exp=1681464982~hmac=385167c167a7b5f7f720fb79c7a1ae9081eb3224d8f950f9be54e7c6f23e2a2b'); 
+            background-size: cover;
+        }
+        b{
+            color:black;
+        }
+        label {
+            color: white;
+        }
+        .btnstyle {
+            background-color: skyblue;
+            color:white;
+            padding:10px;
+            border-radius: 8px;
+            border:none;
+            margin: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <center><h1 style="color:black">Sign Up</h1></center>
+    <div style="margin-left:45%;; margin-top:1%">
+    <form method="POST">
+        <label></label>
+        <p><input placeholder="Username" type="text" name="name" required/></p>
+        <label></label>
+        <p><input placeholder="Mobile Number" type="text" name="mobile" required/></p>
+        <label></label>
+        <p><input placeholder="Email address" type="email" name="email" required/></p>
+        <label></label>
+        <p><input placeholder="Password" type="text" name="password" required/></p>
+    
+        
+        
+        <button class="btnstyle">Sign in</button>
+        <a href="{{url_for('ProLogin')}}" target="_blank">Login</a><br>
+       
+    </form>
+</div>
+
+</body>
+</html>

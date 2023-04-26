@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP validation</title>
+    <style>
+        *{
+            font-family:poppins;
+        }
+        body {
+            background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=740&t=st=1681968160~exp=1681968760~hmac=806c497c29070b09ebeab59af5adb413ffc0f049d1e6be597bbdc6a3c9a19aee');
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+         
+        }
+        label {
+            color:black;
+    
+        }
+        .btnstyle {
+            background-color: skyblue;
+            color:black;
+            padding:10px;
+            border-radius: 8px;
+            border:black;
+            margin: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div style="margin-bottom:45%;; margin-top:13%">
+    <form method="POST" action="{{url_for('otp',otp=otp,name=name,mobile=mobile,email=email,password=password)}}">
+        <h1>Enter OTP</h1>
+        <input type="text" name="otp"><br>
+        <br><button class="btnstyle">submit</button>
+    </form>
+    </div>
+    </center>
+</body>
+</html>
